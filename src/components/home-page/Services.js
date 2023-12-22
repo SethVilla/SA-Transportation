@@ -1,32 +1,32 @@
-import React from 'react'
+import React from 'react';
 
 const jobOpenings = [
     {
         id: 1,
-        role: 'Full-time designer',
+        role: 'Logistics Coordinator',
         href: '#',
         description:
-            'Quos sunt ad dolore ullam qui. Enim et quisquam dicta molestias. Corrupti quo voluptatum eligendi autem labore.',
-        salary: '$75,000 USD',
-        location: 'San Francisco, CA',
+            'Coordinate and manage the logistics of car transport across various states. Ensure timely and safe delivery while maintaining communication with drivers and clients.',
+        salary: 'Competitive',
+        location: 'Remote or On-Site',
     },
     {
         id: 2,
-        role: 'Laravel developer',
+        role: 'Transportation Specialist',
         href: '#',
         description:
-            'Et veniam et officia dolorum rerum. Et voluptas consequatur magni sapiente amet voluptates dolorum. Ut porro aut eveniet.',
-        salary: '$125,000 USD',
-        location: 'San Francisco, CA',
+            'Responsible for planning and executing vehicle transport operations. Requires knowledge of transportation regulations and experience in route planning.',
+        salary: 'Based on experience',
+        location: 'Various Locations',
     },
     {
         id: 3,
-        role: 'React Native developer',
+        role: 'Customer Service Representative',
         href: '#',
         description:
-            'Veniam ipsam nisi quas architecto eos non voluptatem in nemo. Est occaecati nihil omnis delectus illum est.',
-        salary: '$105,000 USD',
-        location: 'San Francisco, CA',
+            'Provide excellent customer service, addressing inquiries and concerns related to vehicle transport. Strong communication and problem-solving skills required.',
+        salary: 'Competitive',
+        location: 'Remote or On-Site',
     },
 ]
 
@@ -37,20 +37,19 @@ export const Services = () => {
                 <div className="mx-auto flex max-w-2xl flex-col items-end justify-between gap-16 lg:mx-0 lg:max-w-none lg:flex-row">
                     <div className="w-full lg:max-w-lg lg:flex-auto">
                         <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                            Services
+                            Our Services
                         </h2>
                         <p className="mt-6 text-xl leading-8 text-gray-600">
-                            Diam nunc lacus lacus aliquam turpis enim. Eget hac velit est euismod lacus. Est non placerat nam arcu.
-                            Cras purus nibh cursus sit eu in id.
+                            At SA Transports, we specialize in the safe and efficient transportation of vehicles across the country. Our expert team ensures your car's safe journey from start to finish.
                         </p>
                         <img
                             src="/servicio.jpg"
-                            alt=""
+                            alt="SA Transports Service"
                             className="mt-16 aspect-[6/5] w-full rounded-2xl bg-gray-50 object-cover lg:aspect-auto lg:h-[34.5rem]"
                         />
                     </div>
                     <div className="w-full lg:max-w-xl lg:flex-auto">
-                        <h3 className="sr-only">Job openings</h3>
+                        <h3 className="sr-only">Job Openings at SA Transports</h3>
                         <ul className="-my-8 divide-y divide-gray-100">
                             {jobOpenings.map((opening) => (
                                 <li key={opening.id} className="py-8">
@@ -68,11 +67,11 @@ export const Services = () => {
                                 </li>
                             ))}
                         </ul>
-                        <div className="mt-8 flex border-t border-gray-100 pt-8">
+                        {/* <div className="mt-8 flex border-t border-gray-100 pt-8">
                             <a href="#" className="text-sm font-semibold leading-6 text-indigo-600 hover:text-indigo-500">
                                 View all openings <span aria-hidden="true">&rarr;</span>
                             </a>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>
